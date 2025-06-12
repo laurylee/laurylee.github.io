@@ -58,20 +58,24 @@
       <section class="section__title">
         <h1>TMS Cobot</h1>
         <h3>UBC ENPH 459 | 2023-2024</h3>
+      </section>
+      <section class="section">
+        <h2>Overview</h2>
+        <p>
+          In collaborating with a team of four engineering physics students, we assisted in the development of a robotic system that
+          autonomously conducts Transcranial Magnetic Stimulation (TMS) of the brain for treatment-resistant depression using a UR cobot. The
+          final system was capable of autonomously positioning the arm based
+          on a stereo IR camera feed and maintaining its relative position to the patient
+          target through a closed-loop feedback controller.
+        </p>
+        
+        <h2>Details</h2>
         <p class="about__desc">
           Transcranial Magnetic Stimulation (TMS) is a non-invasive neurostimulation technique in which a magnetic field is used to induce neural activity in patients with treatment-resistant depression.
-          Sponsored by the NINET lab from the UBC Department of Psychiatry, our capstone team of four Engineering Physics students assisted in developing a system to automate the procedure and increase the precision of the treatment.
-          To achieve this goal, the system needed to continually shadow the targeted area with a TMS coil while maintaining its relative position with centimeter precision.
-          
-        </p>
-        <br>
-        <p>
-          A stereo camera identifies the position of "rigid bodies" using three IR reflective markers. We tranformed the position and orientation  
-          of the "patient" from image space (the camera coordinate system) to robot space (the cobot's base coordinate system) using a series of three-dimensional 
-          affine transformations. We determined the difference, or the error, between the current cobot pose and the desired robot pose based on where the 
-          "patient" is. A PD (proportional and derivative) control algorithm was used to control the linear and angular velocity of the TMS coil on the end of 
-          the cobot arm. We also explored using the integrated force/torque sensor to maintain a constant, light pressure on the "patient head" and to implement 
-          safety measures.
+          Sponsored by the NINET lab from the UBC Department of Psychiatry, our capstone team assisted in developing a system to automate the procedure and increase the precision of the treatment.
+          Since treatments can last upwards of 15 minutes, the system needed to compensate for patient movements and continually shadow the targeted area with a TMS coil while maintaining its relative position with centimeter precision.
+          By using a stereo camera and fiducial markers to identify the patient's position and the TMS coil's position, the patient's MRI brain scan could then be digitally mapped into the same image space 
+          using a series of 3D affine transformations. From there we determined the position error and developed a PD control algorithm to control the linear and angular velocity of the cobot's end effector.
         </p>
       </section>
 

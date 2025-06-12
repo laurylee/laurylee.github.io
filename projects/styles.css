@@ -410,4 +410,14 @@ main {
   .scroll-container {
     display: none;
   }
+
+  .resp_img {
+    width:0.8em;
+  }
+  @media (min-width: 768px) {
+    .resp_img {
+      width:0.3em;
+      float: left;
+    }
+  }
 }

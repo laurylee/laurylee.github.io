@@ -33,16 +33,15 @@
           <li class="nav__list-item">
             <a class="link link--nav" href="#contact">Contact</a>
           </li>
+          <li class = "nav__list-item">
+            <a class = "link link--nav" href="https://www.linkedin.com/in/lauryn-lee/">
+              <i aria-hidden="true" class="fab fa-linkedin"></i>
+            </a>
+          </li>
         </ul>
 
         <button type="button" aria-label="toggle theme" class="btn btn--icon">
           <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
-        </button>
-        <button type="button"
-            href="https://www.linkedin.com/in/lauryn-lee/"
-            aria-label="linkedin"
-            class="link link--icon">
-            <i aria-hidden="true" class="fab fa-linkedin"></i>
         </button>
 
         <button
@@ -56,171 +55,32 @@
     </header>
 
     <main>
-      <!-- About -->
-      <div class="about center">
-        <h2>Hi there! I'm <span class="about__name">Lauryn Lee.</span></h2>
-        <p class="about__desc">
-          I am a recent Engineering Physics graduate from the University of British Columbia with a keen interest in developing electronics and embedded systems to improve everyday life. 
-          Having studied a rigorous combination of physics, applied math, as well as mechanical, electrical, and computer engineering throughout my degree, 
-          I am excited about working on complex, interdisciplinary systems and delving down to the fundamentals of how things work.
+      <section class="section__title">
+        <h1>Remotely Monitored Hybrid Renewable Energy System</h1>
+        <h3>UBC Sustaingineering | 2022-2024</h3>
+      </section>
+      <section class="section">
+        <h2>Overview</h2>
+        <p>
+          Having joined UBC Sustaingineering's Electrical team in my first year at UBC Engineering, I grew 
+          alongside the team throughout my degree. The Hybrid Renewable Energy System (HRES) is a combined 
+          wind and solar powered capture and storage system designed for the team's overall offgrid Sustainable 
+          Mobile Research Testbed (SMRT) project. As the Electrical team's co-lead, I helped manage the project 
+          by communicating with other subteams (such as building design) and stakeholders on their needs as well 
+          as with management and suppliers regarding budgets and timelines.
         </p>
-
-        <div class="about__contact center">
-          <a href="https://example.com">
-            <span class="btn btn--outline">cv</span>
-          </a>
-
-          <a
-            href="https://linkedin.com/in/lauryn-lee"
-            aria-label="linkedin"
-            class="link link--icon"
-          >
-            <i aria-hidden="true" class="fab fa-linkedin"></i>
-          </a>
-        </div>
-      </div>
-
-      <!-- Projects -->
-      <section id="projects" class="section projects">
-        <h2 class="section__title">Projects</h2>
-
-        <div class="projects__grid">
-          <div class="project">
-            <h3>LoRa Pet Tracker</h3>
-            <p class="project__description">
-              A compact LiPo-powered pet tracker and mobile application that uses GPS and LoRa to provide real-time location monitoring.
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">PCB Design</li>
-              <li class="project__stack-item">C</li>
-              <li class="project__stack-item">Wireless Comms</li>
-            </ul>
-
-            <a
-              href="https://example.com"
-              aria-label="live preview"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-            </a>
-          </div>
-
-          <div class="project">
-            <h3>Automated Transcranial Magnetic Stimulation COBOT</h3>
-            <p class="project__description">
-              A robotic system that autonomously conducts TMS treatment by tracking patient movement in real-time.
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">Python</li>
-              <li class="project__stack-item">ROS</li>
-              <li class="project__stack-item">Machine Vision</li>
-            </ul>
-
-            <a
-              href="https://example.com"
-              aria-label="live preview"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-            </a>
-          </div>
-
-          <div class="project">
-            <h3>Remotely Monitored Hybrid Renewable Energy System</h3>
-            <p class="project__description">
-              UBC Sustaingineering's wind and solar hybrid energy capture and storage system for the powering of a Sustainable Mobile Research Testbed (SMRT).
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">SASS</li>
-              <li class="project__stack-item">TypeScript</li>
-              <li class="project__stack-item">React</li>
-            </ul>
-
-            <a
-              href="https://example.com"
-              aria-label="live preview"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-            </a>
-          </div>
-          <div class="project">
-            <h3>Autonomous Parking Enforcing Robot</h3>
-            <p class="project__description">
-              Autonomous robot that navigates a Gazebo-simulated world and reads license plates using convolutional neural networks (CNNs).
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">Python</li>
-              <li class="project__stack-item">ROS</li>
-              <li class="project__stack-item">OpenCV</li>
-              <li class="project__stack-item">Keras</li>
-              <li class="project__stack-item">Machine Vision</li>
-            </ul>
-
-            <a
-              href="https://example.com"
-              aria-label="live preview"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-            </a>
-          </div>
-          <div class="project">
-            <h3>Autonomous Treasure Hunting Robot</h3>
-            <p class="project__description">
-              Self-navigating, treasure hunting robot in a Uncharted themed UBC Engineering Physics course competition.
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">PCB Design</li>
-              <li class="project__stack-item">C++</li>
-              <li class="project__stack-item">OnShape</li>
-            </ul>
-
-            <a
-              href="https://example.com"
-              aria-label="live preview"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-            </a>
-          </div>
-        </div>
+        
       </section>
 
-      <!-- Skills -->
-      <section class="section skills" id="skills">
-        <h2 class="section__title">Skills</h2>
-        <ul class="skills__list">
-          <li class="skills__list-item btn btn--plain">HTML</li>
-          <li class="skills__list-item btn btn--plain">CSS</li>
-          <li class="skills__list-item btn btn--plain">SCSS</li>
-          <li class="skills__list-item btn btn--plain">JavaScript</li>
-          <li class="skills__list-item btn btn--plain">TypeScript</li>
-          <li class="skills__list-item btn btn--plain">React</li>
-          <li class="skills__list-item btn btn--plain">Redux</li>
-          <li class="skills__list-item btn btn--plain">Git</li>
-          <li class="skills__list-item btn btn--plain">Material UI</li>
-          <li class="skills__list-item btn btn--plain">Jest</li>
-          <li class="skills__list-item btn btn--plain">Enzyme</li>
-          <li class="skills__list-item btn btn--plain">CI/CD</li>
-        </ul>
-      </section>
+  </main>
 
-      <!-- Contact -->
-      <section class="section contact center" id="contact">
-        <h2 class="section__title">Contact</h2>
-        <a href="mailto:lauryn.lee@solutionslogic.ca">
-          <span class="btn btn--outline">Email me</span>
-        </a>
-      </section>
-    </main>
 
     <footer class="footer">
       <a
-        href="https://github.com/rjshkhr/cleanfolio-minimal"
+        href="https://github.com/laurylee/laurylee.github.io"
         class="link footer__link"
       >
-        Created By Lauryn Lee
+        Lauryn Lee 2025
       </a>
     </footer>
 
