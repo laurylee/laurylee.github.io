@@ -412,11 +412,13 @@ main {
   }
 
   .resp_img {
-    width:0.8em;
+    width:0.5em;
+    height: auto;
   }
   @media (min-width: 768px) {
     .resp_img {
-      width:0.3em;
+      width:0.2em;
+      height: auto;
       float: left;
     }
   }
