@@ -265,12 +265,12 @@ main {
 
 .about__desc {
   font-size: 1rem;
-  max-width: 600px;
+  max-width: 1000px;
 }
 
 .about__desc,
 .about__contact {
-  margin-top: 2.4em;
+  margin-top: 1.2em;
 }
 
 .about .link--icon {
@@ -399,7 +399,7 @@ main {
 
   .about {
     align-items: flex-start;
-    margin-top: 2em;
+    margin-top: 1.2em;
   }
 
   .footer {
