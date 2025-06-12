@@ -59,14 +59,14 @@
         <h1>LoRa Pet Tracker</h1>
         <h3>UBC ENPH 479 | 2024-2025 | Roy Nodwell Memorial Prize Winner</h3>
         <br>
-        <br>
-        <h2 class = "about__name">Overview</h2>
+        <h2>Overview</h2>
         <p class="about__desc">As a team of four engineering physics students, we developed a pet tracking solution featuring a compact 
           LiPo-powered PCB design, a base station, and a corresponding mobile app to provide real-time location monitoring via
           LoRa (long range) wireless communication. This project combined embedded systems design,
           wireless point to point communication protocols, and mobile application development to pursue more affordable solutions to everyday pet tracking. 
           Our team earned the Roy Nodwell Memorial Prize as a result of our team's high professional standard and the project's industrial relevance.
         </p>
+        <br>
         <h2>Details</h2>
         <p class="about__desc">
           LoRa (short for long range) is a radio communication technique in which each symbol of information is encoded by a 
@@ -85,7 +85,6 @@
           as the microcontroller's documentation and support was lacking making it difficult to debug the LoRa setup. Though we did succeed in implementing a point-to-point system between the collar 
           and the node, the system has potential to track multiple pets at once through a star or mesh network with further development.
         </p>
-        <br>
         <p class="about__desc">
           Another challenge in this project was identifying unreceived messages, due to simultaneous message transmissions at either end or loss of signal. 
           The former issue was addressed by implementing a single acknowledgement protocol, using C, in which each message must be acknowledged by the receiving system 
