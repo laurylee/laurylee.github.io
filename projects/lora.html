@@ -14,7 +14,7 @@
       src="https://kit.fontawesome.com/fa62c117c7.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="../styles.css" />
     <title>Lauryn Lee</title>
   </head>
   <body class="light" id="top">
@@ -22,17 +22,17 @@
       <nav class="nav center">
         <ul class="nav__list center">
           <li class="nav__list-item">
-            <a class="link" href="https:laurylee.github.io">Home</a>
+            <a class="link" href="../index.html">Home</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="../index.html/#projects">Projects</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link" href="../LaurynL_Resume.pdf" target="_blank">CV</a>
           </li>
           <!-- <li class="nav__list-item">
-            <a class="link link--nav" href="#projects">Projects</a>
-          </li> -->
-          <li class="nav__list-item">
-            <a class="link" href="https://laurylee.github.io/LaurynL_Resume.pdf" target="_blank">CV</a>
-          </li>
-          <li class="nav__list-item">
             <a class="link" href="mailto:lauryn.lee@solutionslogic.ca">Contact</a>
-          </li>
+          </li> -->
           <li class = "nav__list-item">
             <a class = "link" href="https://www.linkedin.com/in/lauryn-lee/">
               <i aria-hidden="true" class="fab fa-linkedin"></i>
@@ -58,15 +58,16 @@
       <section class="section">
         <h1>LoRa Pet Tracker</h1>
         <h3>UBC ENPH 479 | 2024-2025 | Roy Nodwell Memorial Prize Winner</h3>
-        <h2>Overview</h2>
-        <p>As a team of four engineering physics students, we developed a pet tracking solution featuring a compact 
+        <br>
+        <h2 class = "about__name">Overview</h2>
+        <p class="about__desc">As a team of four engineering physics students, we developed a pet tracking solution featuring a compact 
           LiPo-powered PCB design, a base station, and a corresponding mobile app to provide real-time location monitoring via
           LoRa (long range) wireless communication. This project combined embedded systems design,
           wireless point to point communication protocols, and mobile application development to pursue more affordable solutions to everyday pet tracking. 
           Our team earned the Roy Nodwell Memorial Prize as a result of our team's high professional standard and the project's industrial relevance.
         </p>
         <h2>Details</h2>
-        <p>
+        <p class="about__desc">
           LoRa (short for long range) is a radio communication technique in which each symbol of information is encoded by a 
           linearly increasing or decreasing sweep across a set bandwidth, also known as a chirp, with different frequency shifts. 
           This proprietary modulation scheme is unique in that with the use of a matched filter at the receiver end, the scheme can extract 
@@ -75,7 +76,7 @@
           we improved the power efficiency of the system thus allowing the collar to last longer under a single charge. 
         </p>
         <img src="../images/lora_schematic.jpg" alt="schematic" class="resp_img">
-        <p>
+        <p class="about__desc">
           After completing an initial proof of concept system, we aimed to compact and improve the system by designing a custom PCB, which I led, and a set of antennas.
           For the first iteration of the PCB shown above, low power consumption, ease of testing, and debugging were balanced while also considering  
           the main components must later be further compacted to accommodate medium-sized pets once testing of the custom-made antennas and firmware were complete. For the core, 
@@ -84,7 +85,7 @@
           and the node, the system has potential to track multiple pets at once through a star or mesh network with further development.
         </p>
         <br>
-        <p>
+        <p class="about__desc">
           Another challenge in this project was identifying unreceived messages, due to simultaneous message transmissions at either end or loss of signal. 
           The former issue was addressed by implementing a single acknowledgement protocol, using C, in which each message must be acknowledged by the receiving system 
           before continuing to the next task. If no acknowledgement is received within a certain window, a random backoff time is selected, then the system is returned to receiving mode. 
