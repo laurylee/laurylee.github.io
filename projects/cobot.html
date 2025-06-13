@@ -74,7 +74,8 @@
           Sponsored by the NINET lab from the UBC Department of Psychiatry, our capstone team assisted in developing a system to automate the procedure and increase the precision of the treatment.
           Since treatments can last upwards of 15 minutes, the system needed to compensate for patient movements and continually shadow the targeted area with a TMS coil while maintaining its relative position with centimeter precision.
           By using a stereo camera and fiducial markers to identify the patient's position and the TMS coil's position, the patient's MRI brain scan could then be digitally mapped into the same image space 
-          using a series of 3D affine transformations. From there we determined the position error and developed a PD control algorithm to control the linear and angular velocity of the cobot's end effector.
+          using a series of 3D affine transformations. From there we determined the position error and developed a PD control algorithm to control the linear and angular velocity of the cobot's end effector. The ROS framework and Python was used 
+          for the controller such that data being received through TCP from the various subsystems could be shared through ROS topics.
         </p>
       </section>
 
